@@ -32,9 +32,9 @@ namespace ProjectSettimanale
         }
         public static void Start()
         {
-            Console.WriteLine("========================");
+            Console.WriteLine("====================");
             Console.WriteLine("==========MENU==========");
-            Console.WriteLine("========================");
+            Console.WriteLine("====================");
             Console.WriteLine("Scegli cosa vuoi fare");
             Console.WriteLine("1-- Nuovo contribuente");
             Console.WriteLine("2-- Lista contribuenti");
@@ -102,6 +102,7 @@ namespace ProjectSettimanale
             {
                 contribuente.Imposta = (RedditoAnnuale - 55000) * 0.41 + 17220;
                 Contribuente.Lista.Add(contribuente);
+                
                 Stampa();
                 Start();
             }
